@@ -1,0 +1,25 @@
+---
+- mystudents:
+  - anil
+  - sunil
+  - amit
+
+- studentdetails:
+  - name: anil
+    phone: 12345
+    address:
+     city: Delhi
+     state: Delhi
+
+  - name: sunil
+    phone: 12345
+    address: 
+      city: Pune
+      state: Maha
+
+  - name: amit
+    phone: 12345
+    address: 
+       city: Noida
+       state: UP
+

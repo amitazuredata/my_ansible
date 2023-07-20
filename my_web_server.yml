@@ -1,0 +1,9 @@
+---
+# comment
+- hosts: all
+  become: yes
+  tasks:
+    - name: Installing Web Server on Ansible Nodes
+      apt:
+        name: apache2
+        state: present
