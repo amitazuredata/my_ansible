@@ -1,0 +1,16 @@
+---
+# Run this playbook on Ubuntu servers only
+- hosts: all
+  become: yes
+  tasks:
+  - name: "Install webserver on Ubuntu servers only"
+    apt: 
+      name: apache2
+      state: present
+    when: ansible_os_family=="Debian"
+
+  - name: "Start webserver on Ubuntu servers only"
+    apt: 
+      name: apache2
+      state: started
+    when: ansible_os_family=="Debian"
